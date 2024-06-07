@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { Caveat } from "next/font/google";
-import moment from "moment";
 import Button from "@/components/ui/Button";
+import moment from "moment";
 
 const caveat = Caveat({ subsets: ["latin"] });
 
-export default function Home() {
-  const creationTime = moment("20240606", "YYYYMMDD").fromNow();
-
+export default async function Home() {
   return (
     <main className="flex flex-col gap-5 justify-center items-center h-screen bg-neutral-800">
       <div className={`flex items-center gap-6 bg-neutral-700 p-6 rounded-lg ${caveat.className}`}>
@@ -33,7 +31,7 @@ export default function Home() {
       </div>
       <footer className="flex flex-col items-center text-neutral-400">
         <span>
-          This website was created <span className="font-semibold text-red-300">{creationTime}</span>.
+          This website was created <span className="font-semibold text-red-300">{moment("20240606", "YYYYMMDD").fromNow()}</span>.
         </span>
         <span>
           Source code is available on <a href="https://github.com/MisterKirill/website" className="font-semibold hover:underline">GitHub</a>.
