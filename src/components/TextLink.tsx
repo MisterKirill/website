@@ -1,5 +1,5 @@
-import { PropsWithChildren } from "react";
-import Link, { LinkProps } from "next/link";
+import { PropsWithChildren } from 'react';
+import Link, { LinkProps } from 'next/link';
 
 export default function TextLink({ children, ...props }: PropsWithChildren<LinkProps>) {
   return (

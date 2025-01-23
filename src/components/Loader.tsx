@@ -1,7 +1,5 @@
-import { LoaderCircle } from "lucide-react";
+import { LoaderCircle } from 'lucide-react';
 
 export default function Loader() {
-  return (
-    <LoaderCircle className="animate-spin" size={25} />
-  );
+  return <LoaderCircle className="animate-spin mx-3" size={25} />;
 }
