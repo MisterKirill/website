@@ -23,12 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${lexend.variable} bg-teal-100 dark:bg-teal-900 text-black dark:text-white antialiased transition-colors`}
+        className={`${lexend.variable} bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 antialiased transition-colors`}
       >
         <ThemeProvider attribute="class">
           <NavBar />
 
-          <main className="container">{children}</main>
+          <main className="container mt-32">{children}</main>
         </ThemeProvider>
       </body>
     </html>
