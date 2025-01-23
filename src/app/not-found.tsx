@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import TextLink from '@/components/TextLink';
 
 export const metadata: Metadata = {
-  title: 'This page was not found',
+  title: 'Not Found',
 };
 
 export default function NotFound() {

@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import { Lexend, Noto_Sans } from 'next/font/google';
 import './globals.css';
 import NavBar from '@/components/NavBar';
@@ -14,11 +13,6 @@ const notoSans = Noto_Sans({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  title: 'Kirill Siukhin',
-  description: 'The personal website of Kirill Siukhin – programmer, musician and chess player.',
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${lexend.variable} ${notoSans.variable} font-lexend bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-200 antialiased transition-colors`}>
-        <ThemeProvider attribute="class">
+        <ThemeProvider attribute="class" defaultTheme="light">
           <NavBar />
 
           <main className="container mt-32">{children}</main>
