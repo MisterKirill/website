@@ -24,7 +24,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <NavBar />
 
-          <main className="container mt-32">{children}</main>
+          <main className="container my-32">{children}</main>
         </ThemeProvider>
       </body>
     </html>
