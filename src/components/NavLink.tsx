@@ -8,7 +8,7 @@ export default function NavLink({ children, ...props }: PropsWithChildren<LinkPr
   const pathname = usePathname();
 
   return (
-    <Link className={`transition-[transform,background-color] ease-in-out duration-[150] py-3 px-5 hover:bg-teal-200 dark:hover:bg-teal-800 rounded-full font-semibold text-teal-700 dark:text-teal-300 active:scale-90 ${pathname == props.href && 'bg-teal-200 dark:bg-teal-800'}`} suppressHydrationWarning {...props}>
+    <Link className={`transition-[scale,background-color] ease-in-out duration-150 py-3 px-5 hover:bg-teal-200 dark:hover:bg-teal-800 rounded-full font-semibold text-teal-700 dark:text-teal-300 active:scale-90 ${pathname == props.href && 'bg-teal-200 dark:bg-teal-800'}`} suppressHydrationWarning {...props}>
       {children}
     </Link>
   );
