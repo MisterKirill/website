@@ -12,7 +12,7 @@ export default function Projects() {
       <h1 className="font-bold text-5xl mb-8">My Projects</h1>
 
       <div className="flex gap-4 flex-wrap">
-        <ProjectCard name="Linkship" description="Web-profile creation tool" />
+        <ProjectCard name="Linkship" description="Web-profile creation service" />
       </div>
     </>
   );

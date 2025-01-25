@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
 import NavLink from './NavLink';
 import ThemeSwitch from './ThemeSwitch';
 
@@ -29,7 +29,7 @@ export default function NavBar() {
           <ThemeSwitch />
         </nav>
 
-        <Menu className="ml-auto md:hidden" onClick={switchMenu} size={30} />
+        {showMenu ? <X className="ml-auto md:hidden" onClick={switchMenu} size={30} /> : <Menu className="ml-auto md:hidden" onClick={switchMenu} size={30} />}
       </div>
 
       {showMenu && (
