@@ -1,15 +1,10 @@
-import { Lexend, Noto_Sans } from 'next/font/google';
+import { Lexend } from 'next/font/google';
 import './globals.css';
 import NavBar from '@/components/NavBar';
 import { ThemeProvider } from 'next-themes';
 
 const lexend = Lexend({
   variable: '--font-lexend',
-  subsets: ['latin'],
-});
-
-const notoSans = Noto_Sans({
-  variable: '--font-noto-sans',
   subsets: ['latin'],
 });
 
@@ -20,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${lexend.variable} ${notoSans.variable} font-lexend bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-200 antialiased transition-colors`}>
+      <body className={`${lexend.variable} font-lexend bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-200 antialiased transition-colors`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <NavBar />
 

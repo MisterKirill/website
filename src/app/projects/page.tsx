@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'The list of my personal projects.',
 };
 
-export default function Projects() {
+export default function Page() {
   return (
     <>
       <h1 className="font-bold text-5xl mb-8">My Projects</h1>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'The personal website of Kirill Siukhin – programmer, musician and chess player.',
 };
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="flex flex-col mt-20">
       <span className="font-extrabold text-4xl md:text-6xl">
@@ -15,7 +15,7 @@ export default function Home() {
         My name is Kirill Siukhin.
       </span>
 
-      <span className="font-medium text-xl md:text-3xl mt-10 font-noto border-l-4 border-teal-700 dark:border-teal-200 pl-4">
+      <span className="font-medium text-xl md:text-3xl mt-10 border-l-4 border-teal-700 dark:border-teal-200 pl-4">
         I am a 16 years old front-end developer from <Interest>Russia, Yekaterinburg</Interest>.
         <br />
         Interested in <Interest>Web Design</Interest>, <Interest>Mobile Development</Interest>, <Interest>Chess</Interest> and <Interest>Music</Interest>.

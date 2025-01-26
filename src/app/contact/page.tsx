@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'My socials, messengers and other information about how you can reach me.',
 };
 
-export default function Contact() {
+export default function Page() {
   return (
     <>
       <h1 className="font-bold text-5xl mb-8">Contact Me</h1>
