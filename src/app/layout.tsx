@@ -1,7 +1,8 @@
 import { Lexend } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
 import './globals.css';
 import NavBar from '@/components/NavBar';
-import { ThemeProvider } from 'next-themes';
+import Footer from '@/components/Footer';
 
 const lexend = Lexend({
   variable: '--font-lexend',
@@ -17,9 +18,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${lexend.variable} font-lexend bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-200 antialiased transition-colors`}>
         <ThemeProvider attribute="class" defaultTheme="light">
-          <NavBar />
+          <div className="flex flex-col h-screen">
+            <NavBar />
 
-          <main className="container my-32">{children}</main>
+            <main className="container my-32 grow">{children}</main>
+
+            <Footer />
+          </div>
+
         </ThemeProvider>
       </body>
     </html>
