@@ -36,7 +36,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
 
       <span className="font-semibold text-lg mb-8">Article by Kirill Siukhin &bull; {moment(post.created_at).fromNow()}</span>
 
-      <span className="text-lg">{post.content}</span>
+      <span className="text-lg prose">{post.content}</span>
     </div>
   );
 }

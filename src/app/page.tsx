@@ -66,7 +66,7 @@ export default function Page() {
       <span className="mt-10 text-2xl">
         1. <span className="font-semibold">Communication and Team Collaboration</span>: I&apos;ve participated in some relatively small teams.
       </span>
-      
+
       <span className="mt-8 text-2xl">
         2. <span className="font-semibold">Creativity</span>: I&apos;ve designed websites and APIs many times before.
       </span>
