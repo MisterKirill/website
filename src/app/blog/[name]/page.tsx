@@ -39,7 +39,7 @@ export default async function Page({ params }: { params: Promise<{ name: string 
 
       <span className="text-lg mb-8">{post.content}</span>
 
-      <Link href="/blog" className="self-end hover:underline font-semibold">Back to posts</Link>
+      <Link href="/blog" className="self-end hover:underline font-semibold">Back to articles</Link>
     </div>
   );
 }
