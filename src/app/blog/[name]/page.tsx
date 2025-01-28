@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { prisma } from '@/utils/prisma';
@@ -36,7 +37,9 @@ export default async function Page({ params }: { params: Promise<{ name: string 
 
       <span className="font-semibold text-lg mb-8">Article by Kirill Siukhin &bull; {moment(post.created_at).fromNow()}</span>
 
-      <span className="text-lg prose">{post.content}</span>
+      <span className="text-lg mb-8">{post.content}</span>
+
+      <Link href="/blog" className="self-end hover:underline font-semibold">Back to posts</Link>
     </div>
   );
 }

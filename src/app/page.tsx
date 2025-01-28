@@ -28,9 +28,11 @@ export default function Page() {
 
       <SoftSkills />
 
-      <span className="text-center font-bold text-4xl mt-28">
-        Want to get in touch? <TextLink href="/contact">Contact Me</TextLink>.
-      </span>
+      <div className="flex flex-col mt-28 items-start">
+        <span className="font-bold text-4xl mb-4">
+          Want to get in touch? <TextLink href="/contact">Contact me</TextLink>.
+        </span>
+      </div>
     </div>
   );
 }

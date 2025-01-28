@@ -1,9 +1,14 @@
-import { PropsWithChildren } from 'react';
+import { ReactNode } from 'react';
 import Link, { LinkProps } from 'next/link';
 
-export default function TextLink({ children, ...props }: PropsWithChildren<LinkProps>) {
+interface TextLinkProps extends LinkProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export default function TextLink({ children, className, ...props }: TextLinkProps) {
   return (
-    <Link className="font-bold transition-colors border-b-3 border-transparent hover:border-teal-700 dark:hover:border-teal-200" {...props}>
+    <Link className={`font-bold transition-colors border-b-2 border-transparent hover:border-teal-700 dark:hover:border-teal-200 ${className}`} {...props}>
       {children}
     </Link>
   );
