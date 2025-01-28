@@ -28,7 +28,9 @@ export default function Page() {
 
       <SoftSkills />
 
-      <h1 className="text-center font-extrabold text-4xl mt-28">Want to get in touch? <TextLink href="/contact">Contact Me</TextLink>.</h1>
+      <span className="text-center font-bold text-4xl mt-28">
+        Want to get in touch? <TextLink href="/contact">Contact Me</TextLink>.
+      </span>
     </div>
   );
 }

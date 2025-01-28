@@ -1,9 +1,11 @@
 export default function Footer() {
   return (
-    <footer className="bg-teal-200 dark:bg-teal-800 py-12 transition-colors">
-      <div className="container">
-        <span className="font-medium text-xl">&copy; 2025 Kirill Siukhin</span>
-      </div>
+    <footer className="text-center bg-teal-200 dark:bg-teal-800 py-12 transition-colors">
+      <span className="font-semibold text-lg">
+        &copy; 2025 Kirill Siukhin
+        <br />
+        All rights reserved
+      </span>
     </footer>
   );
 }
