@@ -3,11 +3,11 @@ import { notFound } from 'next/navigation';
 import { prisma } from '@/utils/prisma';
 import moment from 'moment';
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
-  const id = (await params).id;
+export async function generateMetadata({ params }: { params: Promise<{ name: string }> }): Promise<Metadata> {
+  const name = (await params).name;
 
   const post = await prisma.post.findUnique({
-    where: { id: +id },
+    where: { url_name: name },
   });
 
   if (!post) {
@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
-  const id = (await params).id;
+export default async function Page({ params }: { params: Promise<{ name: string }> }) {
+  const name = (await params).name;
 
   const post = await prisma.post.findUnique({
-    where: { id: +id },
+    where: { url_name: name },
   });
 
   if (!post) {
