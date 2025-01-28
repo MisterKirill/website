@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import Highlight from '@/components/Highlight';
 import HardSkills from '@/components/home/HardSkills';
 import SoftSkills from '@/components/home/SoftSkills';
+import TextLink from '@/components/TextLink';
 
 export const metadata: Metadata = {
   title: 'About Me – Kirill Siukhin',
@@ -28,9 +28,7 @@ export default function Page() {
 
       <SoftSkills />
 
-      <h1 className="text-center font-extrabold text-4xl mt-28">Want to get in touch?</h1>
-
-      <Link href="/contact">Contact Me</Link>
+      <h1 className="text-center font-extrabold text-4xl mt-28">Want to get in touch? <TextLink href="/contact">Contact Me</TextLink>.</h1>
     </div>
   );
 }
