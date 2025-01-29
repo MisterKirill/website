@@ -4,7 +4,7 @@ import BlogPostCard from '@/components/BlogPostCard';
 
 export const metadata: Metadata = {
   title: 'Blog – Kirill Siukhin',
-  description: 'My blog posts.',
+  description: 'My blog.',
 };
 
 export default async function Blog() {

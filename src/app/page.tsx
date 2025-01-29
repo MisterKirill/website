@@ -24,6 +24,18 @@ export default function Page() {
         Interested in <Highlight>Web & Mobile Development</Highlight>, <Highlight>Web Design</Highlight>, <Highlight>Chess</Highlight> and <Highlight>Music</Highlight>.
       </span>
 
+      <h1 className="text-center font-extrabold text-4xl mt-28">Education</h1>
+
+      <div className="flex flex-col items-center">
+        <span className="mt-10 text-2xl">
+          1. <span className="font-semibold">School</span> (2015-2024)
+        </span>
+
+        <span className="mt-6 text-2xl">
+          2. <span className="font-semibold">IT College</span> (2024-present)
+        </span>
+      </div>
+
       <HardSkills />
 
       <SoftSkills />

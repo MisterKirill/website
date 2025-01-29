@@ -17,19 +17,19 @@ export default function Page() {
       </span>
 
       <div className="flex gap-6 mt-6">
-        <a href="https://t.me/misterkirill1" className="transition-transform hover:scale-90">
+        <a href="https://t.me/misterkirill1" className="transition-transform hover:scale-90" title="Telegram">
           <FaTelegram size={50} />
         </a>
 
-        <a href="https://github.com/MisterKirill" className="transition-transform hover:scale-90">
+        <a href="https://github.com/MisterKirill" className="transition-transform hover:scale-90" title="GitHub">
           <FaGithub size={50} />
         </a>
 
-        <a href="https://misterkirill.bsky.social" className="transition-transform hover:scale-90">
+        <a href="https://misterkirill.bsky.social" className="transition-transform hover:scale-90" title="Bluesky">
           <FaBluesky size={50} />
         </a>
 
-        <a href="https://vk.ru/ksiukhin" className="transition-transform hover:scale-90">
+        <a href="https://vk.ru/ksiukhin" className="transition-transform hover:scale-90" title="VK">
           <FaVk size={50} />
         </a>
       </div>

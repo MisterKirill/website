@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${lexend.variable} font-lexend bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-200 antialiased transition-colors`}>
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class">
           <div className="flex flex-col h-screen">
             <NavBar />
 
