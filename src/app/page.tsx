@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Highlight from '@/components/Highlight';
 import HardSkills from '@/components/home/HardSkills';
-import SoftSkills from '@/components/home/SoftSkills';
 import TextLink from '@/components/TextLink';
 
 export const metadata: Metadata = {
