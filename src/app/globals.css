@@ -3,7 +3,6 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-lexend: var(--font-lexend);
   --font-noto: var(--font-noto-sans);
 }
 

@@ -10,7 +10,9 @@ export default function NotFound() {
     <>
       <h1 className="text-5xl font-bold mb-8">Not Found</h1>
       <span className="text-lg md:text-xl font-medium">
-        Please, go to the <TextLink href="/">homepage</TextLink> or <TextLink href="/contact">contact me</TextLink> if you think there is a mistake.
+        Please, go to the <TextLink href="/">homepage</TextLink> or{' '}
+        <TextLink href="/contact">contact me</TextLink> if you think there is a
+        mistake.
       </span>
     </>
   );

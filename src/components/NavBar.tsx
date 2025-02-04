@@ -16,7 +16,10 @@ export default function NavBar() {
   return (
     <div className="w-full py-3 fixed left-1/2 -translate-x-1/2 top-0 backdrop-blur-lg shadow z-10">
       <div className="container flex items-center">
-        <Link className="text-4xl transition-transform ease-linear hover:scale-110" href="/">
+        <Link
+          className="text-4xl transition-transform ease-linear hover:scale-110"
+          href="/"
+        >
           🐱
         </Link>
 
@@ -29,7 +32,11 @@ export default function NavBar() {
           <ThemeSwitch />
         </nav>
 
-        {showMenu ? <X className="ml-auto md:hidden" onClick={switchMenu} size={30} /> : <Menu className="ml-auto md:hidden" onClick={switchMenu} size={30} />}
+        {showMenu ? (
+          <X className="ml-auto md:hidden" onClick={switchMenu} size={30} />
+        ) : (
+          <Menu className="ml-auto md:hidden" onClick={switchMenu} size={30} />
+        )}
       </div>
 
       {showMenu && (

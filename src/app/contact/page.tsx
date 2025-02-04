@@ -4,7 +4,8 @@ import { FaBluesky } from 'react-icons/fa6';
 
 export const metadata: Metadata = {
   title: 'Contact Me – Kirill Siukhin',
-  description: 'My socials, messengers and other information about how you can reach me.',
+  description:
+    'My socials, messengers and other information about how you can reach me.',
 };
 
 export default function Page() {
@@ -17,19 +18,35 @@ export default function Page() {
       </span>
 
       <div className="flex gap-6 mt-6">
-        <a href="https://t.me/misterkirill1" className="transition-transform hover:scale-90" title="Telegram">
+        <a
+          href="https://t.me/misterkirill1"
+          className="transition-transform hover:scale-90"
+          title="Telegram"
+        >
           <FaTelegram size={50} />
         </a>
 
-        <a href="https://github.com/MisterKirill" className="transition-transform hover:scale-90" title="GitHub">
+        <a
+          href="https://github.com/MisterKirill"
+          className="transition-transform hover:scale-90"
+          title="GitHub"
+        >
           <FaGithub size={50} />
         </a>
 
-        <a href="https://misterkirill.bsky.social" className="transition-transform hover:scale-90" title="Bluesky">
+        <a
+          href="https://misterkirill.bsky.social"
+          className="transition-transform hover:scale-90"
+          title="Bluesky"
+        >
           <FaBluesky size={50} />
         </a>
 
-        <a href="https://vk.ru/ksiukhin" className="transition-transform hover:scale-90" title="VK">
+        <a
+          href="https://vk.ru/ksiukhin"
+          className="transition-transform hover:scale-90"
+          title="VK"
+        >
           <FaVk size={50} />
         </a>
       </div>
