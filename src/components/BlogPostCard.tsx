@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import moment from 'moment';
-import { Post } from '@/utils/interfaces';
+import { Tables } from '@/types/database.types';
 
-export default function BlogPostCard({ post }: { post: Post }) {
+export default function BlogPostCard({ post }: { post: Tables<'posts'> }) {
   return (
     <Link href={`/blog/${post.url_name}`}>
       <div className="flex flex-col md:flex-row text-center items-center px-6 py-4 rounded-lg bg-teal-200 dark:bg-teal-800 transition-colors">

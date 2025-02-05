@@ -5,7 +5,12 @@ import supabase from '@/utils/supabase';
 import moment from 'moment';
 
 async function getPost(urlName: string) {
-  return supabase.from('posts').select('*').eq('url_name', urlName).single();
+  const post = await supabase
+    .from('posts')
+    .select('*')
+    .eq('url_name', urlName)
+    .single();
+  return post.data;
 }
 
 export async function generateMetadata({
@@ -14,7 +19,7 @@ export async function generateMetadata({
   params: Promise<{ name: string }>;
 }): Promise<Metadata> {
   const name = (await params).name;
-  const { data: post } = await getPost(name);
+  const post = await getPost(name);
 
   if (!post) {
     return notFound();
@@ -32,7 +37,7 @@ export default async function Page({
   params: Promise<{ name: string }>;
 }) {
   const name = (await params).name;
-  const { data: post } = await getPost(name);
+  const post = await getPost(name);
 
   if (!post) {
     return notFound();

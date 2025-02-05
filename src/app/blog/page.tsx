@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { Post } from '@/utils/interfaces';
 import supabase from '@/utils/supabase';
 import BlogPostCard from '@/components/BlogPostCard';
 
@@ -8,7 +7,7 @@ export const metadata: Metadata = {
   description: 'My blog.',
 };
 
-export default async function Blog() {
+export default async function Page() {
   const { data: posts, error } = await supabase.from('posts').select('*');
 
   return (
@@ -19,7 +18,7 @@ export default async function Blog() {
         <span>Failed to get posts. Please, try again later.</span>
       ) : (
         <div className="flex flex-col gap-6">
-          {posts.map((post: Post) => (
+          {posts.map((post) => (
             <BlogPostCard key={post.id} post={post} />
           ))}
         </div>
