@@ -27,7 +27,6 @@ export default function HardSkills() {
             <SkillCard name="React" url="https://react.dev" />
             <SkillCard name="Vue.js" url="https://vuejs.org" />
             <SkillCard name="Next.JS" url="https://nextjs.org" />
-            <SkillCard name="Nest" url="https://nestjs.com" />
           </div>
         </div>
 
