@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import supabase from '@/utils/supabase';
 import moment from 'moment';
 
+export const revalidate = 60;
+
 async function getPost(urlName: string) {
   const post = await supabase
     .from('posts')
