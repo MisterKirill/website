@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import { FaGithub, FaTelegram, FaVk } from 'react-icons/fa';
-import { FaBluesky } from 'react-icons/fa6';
 
 export const metadata: Metadata = {
   title: 'Contact Me – Kirill Siukhin',
@@ -32,14 +31,6 @@ export default function Page() {
           title="GitHub"
         >
           <FaGithub size={50} />
-        </a>
-
-        <a
-          href="https://misterkirill.bsky.social"
-          className="transition-transform hover:scale-90"
-          title="Bluesky"
-        >
-          <FaBluesky size={50} />
         </a>
 
         <a
