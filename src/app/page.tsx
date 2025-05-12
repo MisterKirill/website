@@ -37,5 +37,3 @@ export default function Page() {
     </div>
   );
 }
-
-// Call the people. The big thing is coming…

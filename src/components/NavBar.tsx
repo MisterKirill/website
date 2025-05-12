@@ -25,8 +25,6 @@ export default function NavBar() {
 
         <nav className="hidden md:flex items-center gap-2 mx-auto md:mx-0 md:gap-4 md:ml-auto p-2 transition-colors">
           <NavLink href="/">About</NavLink>
-          <NavLink href="/projects">Projects</NavLink>
-          <NavLink href="/blog">Blog</NavLink>
           <NavLink href="/contact">Contact</NavLink>
 
           <ThemeSwitch />
